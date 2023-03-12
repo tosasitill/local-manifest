@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Remotes -->
+ <remote name="tosasitill" fetch="https://github.com/tosasitill" />
+ <remote name="los" fetch="https://github.com/LineageOS" />
+ <remote name="jjpprrrr" fetch="https://github.com/jjpprrrr" />
+ <remote name="git" fetch="https://gitlab.com/crdroidandroid" />
+ 
+
+<!-- Device Tree -->
+ <project path="device/xiaomi/polaris" name="device_xiaomi_polaris" remote="tosasitill" revision="main" />
+ <project path="device/xiaomi/mi845-common" name="android_device_xiaomi_sdm845-common" remote="los" revision="lineage-20" />
+ <project path="vendor/xiaomi/polaris" name="vendor_xiaomi_polaris" remote="jjpprrrr" revision="eleven" />
+ <project path="vendor/xiaomi/sdm845-common" name="vendor_xiaomi_sdm845-common" remote="jjpprrrr" revision="thirteen" />
+ <project path="kernel/xiaomi/sdm845" name="android_kernel_xiaomi_sdm845" remote="los" revision="lineage-20" />
+
+<!-- Clang -->
+ <project path="android_prebuilts_clang_host_linux-x86_clang-r445002" name="clang-r445002" remote="git" revision="12.0" />
+ 
+</manifest>
